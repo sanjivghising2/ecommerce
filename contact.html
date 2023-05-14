@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icon/css/all.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <style>
+        
+.footer{
+background:#000;
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:gray;
+font-size:0.8em;
+}
+
+.footer .row a{
+text-decoration:none;
+color:gray;
+transition:0.5s;
+}
+
+.footer .row a:hover{
+color:#fff;
+}
+
+.footer .row ul{
+width:100%;
+}
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+@media (max-width:720px){
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
+    </style>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Online Shopping
+          </div>
+        </div>
+ 
+        
+        <div class="nav-links">
+          <a href="#" target="_blank">Home</a>
+          <a href="/" target="_blank">Services</a>
+          <a href="/" target="_blank">Customer Service</a>
+          <a href="contact.html" target="_blank">Contact US</a>
+          <a href="/" target="_blank">About us</a>
+        </div>
+      </div>
+        <!-- end header -->
+        <div id="content">
+            <div class="content-box">
+                <h1>Contact Us</h1>
+                <p class="content-p">Have any question?We'd love to hear from you.</p>
+                <div class="box box1">
+                    <h3>Admin</h3>
+                    <p>Get in touch with our admin group to see how we can work together.</p>
+                    <button>
+                        Contact Admin
+                    </button>
+                </div>
+                <div class="box box2">
+                    <h3>Help & Suppord</h3>
+                    <p>Our support team will always be there to give  you answer first </p>
+                    <button>
+                        Contact Support
+                    </button>
+                </div>
+                <div class="box box3">
+                    <h3>Sales</h3>
+                    <p>Get in touch with our sale team to see how we can work together.</p>
+                    <button>
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+   
+    </div>
+   <div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <br>
+  <br>
+<!--FONT AWESOME-->
+<footer>
+<div class="footer">
+<div class="row">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-youtube"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</div>
+
+<div class="row">
+<ul>
+<li><a href="#">Contact us</a></li>
+<li><a href="#">Our Services</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms & Conditions</a></li>
+<li><a href="#">Career</a></li>
+</ul>
+</div>
+
+<div class="row">
+Sanjiv Copyright © 2021 Sanjiv - All rights reserved || Designed By:Sanjiv
+</div>
+</div>
+</footer>
+
+<script>
+                  $(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+</script>
+   </div>
+</body>
+</html>
